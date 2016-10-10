@@ -1,0 +1,17 @@
+{
+  "name": "ng-init",
+  "version": "1.0.0",
+  "description": "Demo project to showcase some Angular 1 features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "demo",
+    "evance",
+    "university"
+  ],
+  "author": "Attila Gal",
+  "license": "ISC"
+}
