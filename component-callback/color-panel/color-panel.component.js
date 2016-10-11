@@ -7,11 +7,21 @@
             templateUrl: './color-panel/color-panel.template.html',
             controller: ColorPanel
         });
-    
-    function ColorPanel(){
+
+				ColorPanel.$inject = ['colorService'];
+    function ColorPanel(colorService){
         var vm = this;
-        
-        vm.backgroundColor = [122, 231, 111, 1];
+      		vm.backgroundColor = [0,0,0,1];
+
+        colorService
+										.getColor()
+										.then(
+												function success(data){
+														vm.backgroundColor = data;
+												},function errorr(err) {
+
+												}
+										);
 
         vm.getBackgroundStyle = function () {
             var style = 'rgba(';
