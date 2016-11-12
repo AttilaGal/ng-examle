@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>component callback</title>
+  <title>ng-switch</title>
   <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <script src="../../node_modules/angular/angular.min.js"></script>
 
@@ -14,8 +14,9 @@
 
 <ul>
   <li ng-repeat="number in [1,2,3,4,5,6,7,8,9,10]">
-    <div>
-
+    <div ng-switch="number">
+      <div ng-switch-when="2" style="color: red">{{number}}</div>
+      <div ng-switch-default>{{number}}</div>
     </div>
   </li>
 </ul>
