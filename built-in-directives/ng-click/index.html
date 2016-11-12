@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ng-click</title>
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <script src="../../node_modules/angular/angular.min.js"></script>
+
+
+</head>
+<body ng-app ng-init="timesClicked=0">
+
+<h1>ng-click example</h1>
+
+
+<button class="btn btn-default" ng-click="timesClicked = timesClicked + 1 ">Button</button>
+
+<h3>button was clicked {{timesClicked}} times</h3>
+
+</body>
+</html>
