@@ -1,5 +1,5 @@
-(function(){
-    "use strict";
-    
-    angular.module('color-panel', []);
+(function () {
+  "use strict";
+
+  angular.module('color-panel', []);
 })();

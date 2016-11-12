@@ -1,8 +1,8 @@
 (function () {
-    "use strict";
-    
-    angular.module("ComponentCallback", [
-        'color-panel'
-    ]);
-    
+  "use strict";
+
+  angular.module("ComponentCallback", [
+    'color-panel'
+  ]);
+
 })();
