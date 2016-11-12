@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>component callback</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="../../node_modules/angular/angular.min.js"></script>
+
+
+</head>
+<body ng-app>
+
+    <h1>ng-repeat example</h1>
+
+    <ul>
+      <li ng-repeat="number in [1,2,3,4,5,6,7,8,9,10]"
+          ng-if="number%2 === 0">
+        {{number}}
+      </li>
+    </ul>
+
+
+</body>
+</html>
