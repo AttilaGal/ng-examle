@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ng-class</title>
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <script src="../../node_modules/angular/angular.min.js"></script>
+  <style>
+    .text-bold{
+      font-size: 5em;
+    }
+
+    .text-red{
+      color: red;
+    }
+
+  </style>
+
+</head>
+<body ng-app>
+
+<h1>ng-class example</h1>
+
+<!-- input box to toggle a variable to true or false -->
+<input type="checkbox" ng-model="bold_choice"> Giant
+<input type="checkbox" ng-model="red_choice"> Red
+
+<h3 ng-class="{ 'text-bold': bold_choice, 'text-red': red_choice }">
+  Dynamically changing text with ng-class!
+</h3>
+
+
+</body>
+</html>
