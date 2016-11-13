@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  angular.module("ComponentCallback", [
+  angular.module("ComponentCommunication", [
     'color-panel'
   ]);
 

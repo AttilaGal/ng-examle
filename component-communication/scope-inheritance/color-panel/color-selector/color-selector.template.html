@@ -1,0 +1,26 @@
+<div class="color-selector">
+  <h1>Color Selector</h1>
+  <p>
+    <label for="red">red</label>
+    <input id="red" ng-model="$ctrl.colors[0]"
+           ng-change="$ctrl.colorsChanged()">
+  </p>
+  <p>
+    <label for="green">green</label>
+    <input type="number" id="green"
+           ng-model="$ctrl.colors[1]"
+           ng-change="$ctrl.colorsChanged()">
+  </p>
+  <p>
+    <label for="blue">blue</label>
+    <input type="number" id="blue"
+           ng-model="$ctrl.colors[2]"
+           ng-change="$ctrl.colorsChanged()">
+  </p>
+  <p>
+    <label for="opacity">opacity</label>
+    <input type="number" id="opacity"
+           ng-model="$ctrl.colors[03]"
+           ng-change="$ctrl.colorsChanged()">
+  </p>
+</div>

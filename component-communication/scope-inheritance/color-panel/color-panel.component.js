@@ -20,12 +20,11 @@
       });
       style = style.substr(0, style.length - 1);
       style += ')';
-      console.log('STYLE: ' + style);
       return {'background-color': style};
     };
 
-    vm.colorChangeCallback = function (colorArray) {
-      vm.backgroundColor = colorArray;
+    vm.colorChangeCallback = function (text) {
+      console.log('scope-inheritance in parent component: ' + text);
     }
   }
 

@@ -4,19 +4,21 @@
   angular
     .module('color-panel')
     .component('colorSelector', {
-      bindings: {
-        colors: '<',
-        callback: '&'
-      },
       templateUrl: './color-panel/color-selector/color-selector.template.html',
       controller: ColorSelector
     });
 
-  function ColorSelector() {
+  //inject the store
+  ColorSelector.$inject = ['colorStore'];
+  function ColorSelector(colorStore) {
     var vm = this;
+    
+    //retrieve data from store
+    vm.colors = colorStore.get();
 
+    //submit changes to store
     vm.colorsChanged = function () {
-      vm.callback({colorArray: vm.colors})
+      colorStore.set(vm.colors);
     }
   }
 
