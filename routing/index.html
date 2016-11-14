@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Routing</title>
+  <link rel="stylesheet"
+        href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet"
+        href="style.css"/>
+  <script src="../node_modules/angular/angular.min.js"></script>
+
+  <!--custom angular app-->
+  <script src="app.js"></script>
+  <script src="page-menu/page-menu.module.js"></script>
+  <script src="page1/page1.module.js"></script>
+  <script src="page2/page2.module.js"></script>
+  <script src="page3/page3.module.js"></script>
+  <script src="page-menu/page-menu.component.js"></script>
+  <script src="page1/page1.component.js"></script>
+  <script src="page2/page2.component.js"></script>
+  <script src="page3/page3.component.js"></script>
+
+</head>
+<body ng-app="routingExample">
+
+<page-menu></page-menu>
+
+<page1></page1>
+<page2></page2>
+<page3></page3>
+
+</body>
+</html>
