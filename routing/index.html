@@ -9,6 +9,9 @@
         href="style.css"/>
   <script src="../node_modules/angular/angular.min.js"></script>
 
+  <!--UI router-->
+  <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
   <!--custom angular app-->
   <script src="app.js"></script>
   <script src="page-menu/page-menu.module.js"></script>
@@ -25,9 +28,7 @@
 
 <page-menu></page-menu>
 
-<page1></page1>
-<page2></page2>
-<page3></page3>
+<div ui-view ></div>
 
 </body>
 </html>
