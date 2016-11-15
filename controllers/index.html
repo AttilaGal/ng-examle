@@ -11,15 +11,17 @@
 
   <!--custom angular app-->
   <script src="app.js"></script>
+  <script src="simpleController.js"></script>
 
 </head>
 <body ng-app="ControllerExample">
 
 <h1>Controller example</h1>
 
-<div>
+<div ng-controller="simpleController as $ctrl">
   <h3>This content is being controlled by a controller</h3>
-  <button class="btn btn-danger">
+  <button class="btn btn-danger"
+          ng-click="$ctrl.clickHandler()">
     Don't click me!
   </button>
 </div>
