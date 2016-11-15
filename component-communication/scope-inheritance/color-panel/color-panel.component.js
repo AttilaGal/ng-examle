@@ -23,8 +23,8 @@
       return {'background-color': style};
     };
 
-    vm.colorChangeCallback = function (text) {
-      console.log('scope-inheritance in parent component: ' + text);
+    vm.printColor = function (text) {
+      console.log('callback in parent component: ' + text);
     }
   }
 

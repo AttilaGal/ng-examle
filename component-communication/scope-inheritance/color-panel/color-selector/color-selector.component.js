@@ -5,14 +5,19 @@
     .module('color-panel')
     .component('colorSelector', {
       bindings: {
-        colors: '<'
+        colors: '<',
+        callback: '&'
       },
       templateUrl: './color-panel/color-selector/color-selector.template.html',
       controller: ColorSelector
     });
 
   function ColorSelector() {
-    //functionality would be added here
+    var vm = this;
+    
+    vm.colorsChanged = function(){
+      vm.callback({message: 'colors have changed!'});
+    }
   }
 
 })();

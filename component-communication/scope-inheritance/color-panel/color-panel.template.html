@@ -1,6 +1,7 @@
 <div class="color-panel" ng-style="$ctrl.getBackgroundStyle()">
     <h1>Color Panel</h1>
     <color-selector
-            colors="$ctrl.backgroundColor">
+            colors="$ctrl.backgroundColor"
+            callback="$ctrl.printColor(message)">
     </color-selector>
 </div>
